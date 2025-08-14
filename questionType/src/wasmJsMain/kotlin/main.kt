@@ -2,7 +2,9 @@ import kotlinx.browser.document
 import org.w3c.dom.HTMLButtonElement
 import org.w3c.dom.HTMLDivElement
 
-
+/**
+ * [KT-80132](https://youtrack.jetbrains.com/issue/KT-80132/CompileError-WebAssembly.instantiateStreaming-Compiling-function-failed-call5-expected-type-ref-null-1418-found-local.get-of)
+ */
 fun main() {
     with(document) {
         val outputDiv = getElementById("output")!!.unsafeCast<HTMLDivElement>()
