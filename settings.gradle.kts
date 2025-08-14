@@ -18,3 +18,4 @@ plugins {
 rootProject.name = "kmp"
 
 include(":questionType")
+include(":illegalCast")
