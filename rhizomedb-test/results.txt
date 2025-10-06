@@ -1,0 +1,21 @@
+./gradlew :rhizomedb-test:wasmJsBenchmark
+
+wasmJs summary:
+Benchmark                                 Mode  Cnt         Score        Error    Units
+DbBench.createOneEntity                  thrpt    5    273281.225 ±   3606.137  ops/sec
+DbBench.entityLookup                     thrpt    5  17126710.374 ± 119314.399  ops/sec
+DbBench.entityLookupAvoidingThreadLocal  thrpt    5  27617892.474 ± 113909.256  ops/sec
+DbBench.writeAttribute                   thrpt    5    580716.864 ±   3375.364  ops/sec
+TrieBenchmark.lookup                     thrpt    5  68913439.538 ± 139539.949  ops/sec
+
+===
+
+./gradlew :rhizomedb-test:jvmBenchmark
+
+jvm summary:
+Benchmark                                 Mode  Cnt          Score         Error  Units
+DbBench.createOneEntity                  thrpt    5     539014.961 ±   52142.049  ops/s
+DbBench.entityLookup                     thrpt    5   63616137.279 ± 1973169.865  ops/s
+DbBench.entityLookupAvoidingThreadLocal  thrpt    5   99995041.510 ±  930696.896  ops/s
+DbBench.writeAttribute                   thrpt    5    1879209.191 ±   43711.435  ops/s
+TrieBenchmark.lookup                     thrpt    5  137709387.433 ± 3662885.939  ops/s
