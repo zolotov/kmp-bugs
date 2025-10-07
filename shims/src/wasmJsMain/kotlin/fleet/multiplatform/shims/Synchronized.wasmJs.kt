@@ -1,3 +1,5 @@
 package fleet.multiplatform.shims
 
-actual inline fun synchronizedImpl(lock: Any, block: () -> Any?): Any? = block()
+actual typealias SynchronizedObject = Any
+
+actual inline fun synchronizedImpl(lock: SynchronizedObject, block: () -> Any?): Any? = block()

@@ -2,11 +2,11 @@
 
 wasmJs summary:
 Benchmark                                 Mode  Cnt         Score        Error    Units
-DbBench.createOneEntity                  thrpt    5    273281.225 ±   3606.137  ops/sec
-DbBench.entityLookup                     thrpt    5  17126710.374 ± 119314.399  ops/sec
-DbBench.entityLookupAvoidingThreadLocal  thrpt    5  27617892.474 ± 113909.256  ops/sec
-DbBench.writeAttribute                   thrpt    5    580716.864 ±   3375.364  ops/sec
-TrieBenchmark.lookup                     thrpt    5  68913439.538 ± 139539.949  ops/sec
+DbBench.createOneEntity                  thrpt    5     273,281.225 ±   3606.137  ops/sec
+DbBench.entityLookup                     thrpt    5  17,126,710.374 ± 119314.399  ops/sec
+DbBench.entityLookupAvoidingThreadLocal  thrpt    5  27,617,892.474 ± 113909.256  ops/sec
+DbBench.writeAttribute                   thrpt    5     580,716.864 ±   3375.364  ops/sec
+TrieBenchmark.lookup                     thrpt    5  68,913,439.538 ± 139539.949  ops/sec
 
 ===
 
@@ -14,8 +14,20 @@ TrieBenchmark.lookup                     thrpt    5  68913439.538 ± 139539.949 
 
 jvm summary:
 Benchmark                                 Mode  Cnt          Score         Error  Units
-DbBench.createOneEntity                  thrpt    5     539014.961 ±   52142.049  ops/s
-DbBench.entityLookup                     thrpt    5   63616137.279 ± 1973169.865  ops/s
-DbBench.entityLookupAvoidingThreadLocal  thrpt    5   99995041.510 ±  930696.896  ops/s
-DbBench.writeAttribute                   thrpt    5    1879209.191 ±   43711.435  ops/s
-TrieBenchmark.lookup                     thrpt    5  137709387.433 ± 3662885.939  ops/s
+DbBench.createOneEntity                  thrpt    5      539,014.961 ±   52142.049  ops/s
+DbBench.entityLookup                     thrpt    5   63,616,137.279 ± 1973169.865  ops/s
+DbBench.entityLookupAvoidingThreadLocal  thrpt    5   99,995,041.510 ±  930696.896  ops/s
+DbBench.writeAttribute                   thrpt    5    1,879,209.191 ±   43711.435  ops/s
+TrieBenchmark.lookup                     thrpt    5  137,709,387.433 ± 3662885.939  ops/s
+
+===
+
+./gradlew :rhizomedb-test:macosArm64Benchmark
+
+macosArm64 summary:
+Benchmark                                 Mode  Cnt         Score        Error    Units
+DbBench.createOneEntity                  thrpt    5      52,648.990 ±    556.206  ops/sec
+DbBench.entityLookupAvoidingThreadLocal  thrpt    5   6,067,567.829 ±  52080.876  ops/sec
+DbBench.entityLookup                     thrpt    5   4,057,910.422 ±  40803.448  ops/sec
+DbBench.writeAttribute                   thrpt    5      99,717.517 ±    662.543  ops/sec
+TrieBenchmark.lookup                     thrpt    5  42,811,895.240 ± 943765.159  ops/sec

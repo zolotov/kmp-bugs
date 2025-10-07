@@ -1,10 +1,12 @@
 // Copyright 2000-2025 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
 package fleet.multiplatform.shims
 
-import kotlin.contracts.*
+import kotlin.contracts.ExperimentalContracts
+import kotlin.contracts.InvocationKind
+import kotlin.contracts.contract
 
 @OptIn(ExperimentalContracts::class)
- inline fun <T> synchronized(lock: Any, block: () -> T): T {
+inline fun <T> synchronized(lock: SynchronizedObject, block: () -> T): T {
   contract {
     callsInPlace(block, InvocationKind.EXACTLY_ONCE)
   }
@@ -12,5 +14,7 @@ import kotlin.contracts.*
   return synchronizedImpl(lock, block) as T
 }
 
-expect inline fun synchronizedImpl(lock: Any, block: () -> Any?): Any?
+expect open class SynchronizedObject()
+
+expect inline fun synchronizedImpl(lock: SynchronizedObject, block: () -> Any?): Any?
 

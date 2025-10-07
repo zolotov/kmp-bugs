@@ -13,6 +13,8 @@ kotlin {
         binaries.executable()
     }
     jvm()
+    iosArm64()
+    macosArm64()
 
     sourceSets {
         commonMain.dependencies {

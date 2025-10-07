@@ -1,10 +1,12 @@
 // Copyright 2000-2024 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
 package fleet.util
 
+import fleet.multiplatform.shims.SynchronizedObject
 import fleet.multiplatform.shims.synchronized
 import kotlin.random.Random
 
 object Random {
+  private val lock = SynchronizedObject()
   private val cacheBits = ByteArray(8 * 1024)
   private var served: Int = cacheBits.size
 
@@ -16,7 +18,7 @@ object Random {
         rnd.nextBytes(answer)
       }
       else {
-        synchronized(cacheBits) {
+        synchronized(lock) {
           if (served + len > cacheBits.size) {
             rnd.nextBytes(cacheBits)
             served = 0

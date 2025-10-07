@@ -444,7 +444,7 @@ class EntitiesTest {
   }
 
   @Test
-  fun `iterate @Many values`() {
+  fun `iterate Many values`() {
     emptyDb().change {
       register(ManyValuesBox)
       val box = ManyValuesBox.new {

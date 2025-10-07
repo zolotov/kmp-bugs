@@ -12,4 +12,12 @@ kotlin {
         binaries.executable()
     }
     jvm()
+    iosArm64()
+    macosArm64()
+
+    sourceSets {
+        nativeMain.dependencies {
+            implementation("org.jetbrains.kotlinx:atomicfu:0.26.1")
+        }
+    }
 }
