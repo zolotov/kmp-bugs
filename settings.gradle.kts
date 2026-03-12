@@ -19,7 +19,7 @@ rootProject.name = "kmp"
 
 include(":questionType")
 include(":illegalCast")
-include(":fastutil")
+include(":kfc")
 include(":openmap")
 include(":rhizomedb")
 include(":rhizomedb-test")
