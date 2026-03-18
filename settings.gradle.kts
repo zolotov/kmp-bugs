@@ -17,10 +17,12 @@ plugins {
 
 rootProject.name = "kmp"
 
-include(":questionType")
+include(":download")
+include(":fastutil")
 include(":illegalCast")
 include(":kfc")
 include(":openmap")
+include(":questionType")
 include(":rhizomedb")
 include(":rhizomedb-test")
 include(":serialization")
