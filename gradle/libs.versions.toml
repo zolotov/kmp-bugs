@@ -5,9 +5,9 @@ kotlin-coroutines="1.10.1"
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
-kotlin-browser = { module = "org.jetbrains.kotlin-wrappers:kotlin-browser", version = "2026.3.12"}
-kotlin-jszip = { module = "org.jetbrains.kotlin-wrappers:kotlin-jszip", version = "2026.3.12-3.10.1"}
-kotlin-web = { module = "org.jetbrains.kotlin-wrappers:kotlin-web", version = "2026.3.12"}
+kotlin-browser = { module = "org.jetbrains.kotlin-wrappers:kotlin-browser", version = "2026.3.15"}
+kotlin-jszip = { module = "org.jetbrains.kotlin-wrappers:kotlin-jszip", version = "2026.3.15-3.10.1"}
+kotlin-web = { module = "org.jetbrains.kotlin-wrappers:kotlin-web", version = "2026.3.15"}
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.9.0" }
 
 
