@@ -22,9 +22,9 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(project(":rhizomedb"))
-            implementation("org.jetbrains.kotlinx:kotlinx-benchmark-runtime:0.4.14")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.9.0")
+            implementation(libs.kotlinx.benchmark.runtime)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.serialization.core)
         }
         commonTest.dependencies {
             implementation(kotlin("test"))

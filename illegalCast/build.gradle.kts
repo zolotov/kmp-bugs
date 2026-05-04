@@ -15,8 +15,8 @@ kotlin {
 
     sourceSets {
         wasmJsMain.dependencies {
-            implementation("org.jetbrains.kotlinx:kotlinx-browser:0.3")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
+            implementation(libs.kotlinx.browser)
+            implementation(libs.kotlinx.serialization.core)
         }
     }
 }

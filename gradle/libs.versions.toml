@@ -1,15 +1,32 @@
 [versions]
+atomicfu = "0.32.1"
 kotlin = "2.3.20"
 kotlin-coroutines="1.10.1"
 android="8.13.2"
+kotlinx-benchmark-runtime = "0.4.16"
+kotlinx-browser = "0.5.0"
+kotlinx-collections-immutable = "0.4.0"
+kotlinx-serialization = "1.11.0"
+ktor-client-core = "3.4.3"
+ktor-client-cio = "3.4.3"
+ktor-client-logging = "3.4.3"
 
 [libraries]
+atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "atomicfu" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlinx-benchmark-runtime = { module = "org.jetbrains.kotlinx:kotlinx-benchmark-runtime", version.ref = "kotlinx-benchmark-runtime" }
+kotlinx-browser = { module = "org.jetbrains.kotlinx:kotlinx-browser", version.ref = "kotlinx-browser" }
+kotlinx-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx-collections-immutable" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
-kotlin-browser = { module = "org.jetbrains.kotlin-wrappers:kotlin-browser", version = "2026.4.12"}
-kotlin-jszip = { module = "org.jetbrains.kotlin-wrappers:kotlin-jszip", version = "2026.4.12-3.10.1"}
-kotlin-web = { module = "org.jetbrains.kotlin-wrappers:kotlin-web", version = "2026.4.12"}
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.9.0" }
+kotlin-browser = { module = "org.jetbrains.kotlin-wrappers:kotlin-browser", version = "2026.4.15"}
+kotlin-jszip = { module = "org.jetbrains.kotlin-wrappers:kotlin-jszip", version = "2026.4.15-3.10.1"}
+kotlin-web = { module = "org.jetbrains.kotlin-wrappers:kotlin-web", version = "2026.4.15"}
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+jetbrains-annotations = { module = "org.jetbrains:annotations", version="26.1.0"}
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor-client-logging" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor-client-cio" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor-client-core" }
 
 
 [plugins]

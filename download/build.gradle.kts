@@ -16,9 +16,9 @@ kotlin {
     sourceSets {
         wasmJsMain.dependencies {
             implementation(libs.kotlin.stdlib)
-            implementation("io.ktor:ktor-client-core:3.4.1")
-            implementation("io.ktor:ktor-client-cio:3.4.1")
-            implementation("io.ktor:ktor-client-logging:3.4.1")
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.cio)
+            implementation(libs.ktor.client.logging)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.bundles.wrappers)

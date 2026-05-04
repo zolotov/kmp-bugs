@@ -18,9 +18,9 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.4.0")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.9.0")
+            implementation(libs.kotlinx.collections.immutable)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.serialization.core)
         }
     }
 }

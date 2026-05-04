@@ -25,9 +25,9 @@ kotlin {
             implementation(project(":openmap"))
             implementation(project(":shims"))
             implementation(project(":serialization"))
-            implementation("org.jetbrains:annotations:26.0.2")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.9.0")
+            implementation(libs.jetbrains.annotations)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.serialization.core)
         }
         all {
             languageSettings.enableLanguageFeature("ContextParameters")

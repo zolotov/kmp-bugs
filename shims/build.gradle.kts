@@ -17,7 +17,7 @@ kotlin {
 
     sourceSets {
         nativeMain.dependencies {
-            implementation("org.jetbrains.kotlinx:atomicfu:0.26.1")
+            implementation(libs.atomicfu)
         }
     }
 }
